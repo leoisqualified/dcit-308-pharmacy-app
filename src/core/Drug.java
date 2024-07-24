@@ -1,9 +1,9 @@
 public class Drug {
-    private String drugCode;
-    private String name;
-    private String supplier;
-    private double price;
-    private int quantity;
+    public String drugCode;
+    public String name;
+    public String supplier;
+    public double price;
+    public int quantity;
 
     public Drug(String drugCode, String name, String supplier, double price, int quantity) {
         this.drugCode = drugCode;

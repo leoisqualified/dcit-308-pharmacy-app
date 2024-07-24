@@ -1,13 +1,16 @@
 public class Supplier {
-    private String supplierId;
-    private String name;
-    private String location;
+    public String supplierID;
+    public String name;
+    public String location;
 
-    public Supplier(String supplierId, String name, String location) {
-        this.supplierId = supplierId;
+    public Supplier(String supplierID, String name, String location) {
+        this.supplierID = supplierID;
         this.name = name;
         this.location = location;
     }
 
-    // Getters and Setters
+    @Override
+    public String toString() {
+        return "Supplier ID: " + supplierID + ", Name: " + name + ", Location: " + location;
+    }
 }

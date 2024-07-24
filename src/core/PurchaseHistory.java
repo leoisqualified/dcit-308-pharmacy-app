@@ -1,19 +1,18 @@
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class PurchaseHistory {
-    private String drugCode;
-    private LocalDateTime purchaseTime;
-    private int quantity;
-    private double totalAmount;
-    private String buyer;
+    public String drugCode;
+    public int quantityPurchased;
+    public LocalDate purchaseDate;
 
-    public PurchaseHistory(String drugCode, LocalDateTime purchaseTime, int quantity, double totalAmount, String buyer) {
+    public PurchaseHistory(String drugCode, int quantityPurchased, LocalDate purchaseDate) {
         this.drugCode = drugCode;
-        this.purchaseTime = purchaseTime;
-        this.quantity = quantity;
-        this.totalAmount = totalAmount;
-        this.buyer = buyer;
+        this.quantityPurchased = quantityPurchased;
+        this.purchaseDate = purchaseDate;
     }
 
-    // Getters and Setters
+    @Override
+    public String toString() {
+        return "Drug Code: " + drugCode + ", Quantity Purchased: " + quantityPurchased + ", Purchase Date: " + purchaseDate;
+    }
 }
