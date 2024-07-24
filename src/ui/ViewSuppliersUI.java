@@ -1,3 +1,5 @@
+package ui;
+
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
