@@ -1,6 +1,7 @@
 package ui;
 
 import model.PharmacyManagementSystem;
+import model.PurchaseHistory;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;

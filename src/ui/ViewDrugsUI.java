@@ -4,6 +4,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import model.PharmacyManagementSystem;
+import model.Drug;
 
 public class ViewDrugsUI {
 
