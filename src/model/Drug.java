@@ -1,3 +1,5 @@
+package model;
+
 public class Drug {
     public String drugCode;
     public String name;

@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import model.Drug;
+import model.PharmacyManagementSystem;
 
 public class AddDrugUI {
 
@@ -47,7 +49,6 @@ public class AddDrugUI {
         Button addButton = new Button("Add Drug");
         GridPane.setConstraints(addButton, 1, 5);
         addButton.setOnAction(e -> {
-            // Add logic to handle adding the drug
             String code = codeInput.getText();
             String name = nameInput.getText();
             String supplier = supplierInput.getText();
@@ -55,7 +56,6 @@ public class AddDrugUI {
             int quantity = Integer.parseInt(quantityInput.getText());
 
             Drug newDrug = new Drug(code, name, supplier, price, quantity);
-            // Assuming PharmacyManagementSystem instance is accessible
             PharmacyManagementSystem pms = new PharmacyManagementSystem();
             pms.addDrug(newDrug);
 

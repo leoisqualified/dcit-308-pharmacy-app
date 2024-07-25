@@ -3,6 +3,7 @@ package ui;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
+import model.PharmacyManagementSystem;
 
 public class ViewDrugsUI {
 
@@ -13,7 +14,7 @@ public class ViewDrugsUI {
         ListView<String> listView = new ListView<>();
 
         // Assuming PharmacyManagementSystem instance is accessible
-        core.PharmacyManagementSystem pms = new core.PharmacyManagementSystem();
+        PharmacyManagementSystem pms = new PharmacyManagementSystem();
         for (Drug drug : pms.getDrugs()) {
             listView.getItems().add(drug.toString());
         }
