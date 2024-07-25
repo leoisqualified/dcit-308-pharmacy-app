@@ -1,3 +1,5 @@
+package model;
+
 public class Supplier {
     public String supplierID;
     public String name;

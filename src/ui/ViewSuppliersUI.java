@@ -3,7 +3,8 @@ package ui;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
-import core.PharmacyManagementSystem;
+import model.PharmacyManagementSystem;
+import model.Supplier;
 
 public class ViewSuppliersUI {
 
