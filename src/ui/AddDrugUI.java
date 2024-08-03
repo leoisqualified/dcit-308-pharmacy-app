@@ -56,7 +56,7 @@ public class AddDrugUI {
             int quantity = Integer.parseInt(quantityInput.getText());
 
             Drug newDrug = new Drug(code, name, supplier, price, quantity);
-            PharmacyManagementSystem pms = new PharmacyManagementSystem();
+            PharmacyManagementSystem pms = PharmacyManagementSystem.getInstance();
             pms.addDrug(newDrug);
 
             window.close();

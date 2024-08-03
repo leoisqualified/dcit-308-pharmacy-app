@@ -14,8 +14,7 @@ public class ViewDrugsUI {
 
         ListView<String> listView = new ListView<>();
 
-        // Assuming PharmacyManagementSystem instance is accessible
-        PharmacyManagementSystem pms = new PharmacyManagementSystem();
+        PharmacyManagementSystem pms = PharmacyManagementSystem.getInstance();
         for (Drug drug : pms.getDrugs()) {
             listView.getItems().add(drug.toString());
         }
